@@ -1,0 +1,221 @@
+h1, h2, h3, h4, h5, h6{font-family: 'Noto Sans TC', sans-serif;}
+p, a, input, label, textarea, span, ul, li{font-family: 'Open Sans', sans-serif;}
+header{
+    border-bottom: solid 1px #c9c9c9;
+    background-color: #f3f3f3;
+}
+header nav img{height: 30px;}
+header nav img:hover{height: 70px;}
+header li{margin: 0 10px;}
+#main .main-picture{
+    height: 71vw;
+    margin-bottom: 0px;
+    background-image: url("首頁圖.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100%;
+    color: black;
+}
+#main h1{font-size: 52px; font-weight: 400; line-height: 1.5;}
+#main h1 svg text{
+    transform: translate(0px,87px);
+    -ms-transform: translate(0px,87px); /* IE 9 */
+    -webkit-transform: translate(0px,87px); /* Safari and Chrome */
+    -o-transform: translate(0px,87px); /* Opera */
+    -moz-transform: translate(0px,87px);
+    font-family: Lora;
+    stroke: white;
+    stroke-width: 1;
+    animation: hallucination 5s infinite alternate;
+}
+@keyframes hallucination {
+    0% {
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset:  20%;
+        fill: black;
+    }
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffset: -20%;
+        fill: rgba(0, 0, 0, 0)
+    }
+}
+.lead{
+    transform: translate(0px,87px);
+    -ms-transform: translate(0px,87px); /* IE 9 */
+    -webkit-transform: translate(0px,-50px); /* Safari and Chrome */
+    -o-transform: translate(0px,87px); /* Opera */
+    -moz-transform: translate(0px,87px);
+}
+#main .container{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#intro{padding: 80px 0px;}
+#intro h3{margin-bottom: 40px;}
+#intro img{width: 100px; border-radius: 100%; margin-bottom: 13px;}
+header img{border-radius: 100%;}
+#intro .wordCarousel{margin-left: -35px;}
+th, td{text-align: center;}
+#time-table{padding: 80px 0px; background: rgb(240, 240, 240);}
+#time-table h4{margin-top: 30px;}
+#time-table table{margin-bottom: 30px;}
+#IT, #math, #egn, #phy, #chm, #bio{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    background-position: center 0px;
+    padding: 80px 0px;
+}
+#IT{background-image: url('IT.jpg'); background-color: rgb(242, 224, 248);}
+#bio{background-image: url('bio.jpg'); background-color: rgb(226, 240, 217);}
+#phy{background-image: url('phy.jpg'); background-color: rgb(249, 242, 235);}
+#chm{background-image: url('che.jpg'); background-color: rgb(255, 229, 229);}
+#math{background-image: url('math.jpg'); background-color: rgb(231, 240, 249);}
+#egn{background-image: url('egn.jpg'); background-color: rgb(225, 220, 252);}
+.subject-title{
+    color: black;
+    font-size: 48px;
+    padding: 20px;
+}
+.subject{
+    font-size: 20px;
+    position: relative;
+    padding: 10px 0 10px;
+    /*animation-name: movetoleft;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;*/
+}
+.subject-text{
+    font-size: 20px;
+    position: relative;
+    padding: 0 0 30px;
+}
+.subject-text a{
+    color: black;
+    text-decoration: none;
+}
+.subject-text span:hover{
+    font-size: 24px;
+}
+.subject img{
+    width: 400px;
+}
+.subject img:hover{
+    width: 405px;
+}
+#pdf iframe{
+    border: none;
+    width: 100vw;
+    height: 100vh;
+}
+footer{border-top: solid 1px #c9c9c9; background-color: gray; color: white; padding: 40px 0px;}
+footer img{width: 80px; margin-bottom: 26px;}
+footer h4{margin-bottom: 26px;}
+footer a{margin-bottom: 26px; color: #f05f5c; text-decoration: none;}
+footer a:hover{color: #f05f5c; text-decoration: none;}
+footer ul{list-style: none; padding: 0; float: left; margin-right: 50px;}
+footer ul li{margin-bottom: 10px;}
+@media only screen and (max-width: 768px){
+    #main h1{font-size: 36px;}
+    #main h1 svg text{
+        transform: translate(0px,83px);
+        -ms-transform: translate(0px,83px); /* IE 9 */
+        -webkit-transform: translate(0px,83px); /* Safari and Chrome */
+        -o-transform: translate(0px,83px); /* Opera */
+        -moz-transform: translate(0px,83px);
+    }
+    .lead{font-size: 16px;}
+    #IT, #math, #egn, #phy, #chm, #bio{background-position: center 0px; background-size: 100%; background-repeat: no-repeat;}
+    .subject img{width: 250px;}
+    .subject img:hover{width: 252px;}
+    footer h4{
+        margin-bottom: 26px;
+        margin-top: 35px;
+    }
+}
+@keyframes movetoright{from{left: -500px;} to{left: 0;}}
+@keyframes movetoleft{from{left: 500px;} to{left: 0;}}
+/*flip template*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Oswald);
+.wordCarousel div {
+    overflow: hidden;
+    position: relative;
+    float: center;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+}
+.wordCarousel-left div{
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 80px;
+    padding-top: 10px;
+    margin-top: -10px;
+    margin-right: 670px;
+}
+.wordCarousel div li {
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+}
+.wordCarousel-left div li{
+    padding: 0 10px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+}
+
+.flip2 {
+    -webkit-animation: flip2 5s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip2 5s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@-webkit-keyframes flip2 {
+    0% {
+        margin-top: -180px;
+    }
+    5% {
+        margin-top: -90px;
+    }
+    50% {
+        margin-top: -90px;
+    }
+    55% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+
+@keyframes flip2 {
+    0% {
+        margin-top: -180px;
+    }
+    5% {
+        margin-top: -90px;
+    }
+    50% {
+        margin-top: -90px;
+    }
+    55% {
+        margin-top: 0px;
+    }
+    99.99% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
