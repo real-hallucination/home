@@ -70,12 +70,12 @@ th, td{text-align: center;}
     background-position: center 0px;
     padding: 80px 0px;
 }
-#IT{background-image: url('IT.JPG'); background-color: rgb(242, 224, 248);}
-#bio{background-image: url('bio.JPG'); background-color: rgb(226, 240, 217);}
-#phy{background-image: url('phy.JPG'); background-color: rgb(249, 242, 235);}
-#chm{background-image: url('che.JPG'); background-color: rgb(255, 229, 229);}
-#math{background-image: url('math.JPG'); background-color: rgb(231, 240, 249);}
-#egn{background-image: url('egn.JPG'); background-color: rgb(225, 220, 252);}
+#IT{background-image: url('IT.jpg'); background-color: rgb(242, 224, 248);}
+#bio{background-image: url('bio.jpg'); background-color: rgb(226, 240, 217);}
+#phy{background-image: url('phy.jpg'); background-color: rgb(249, 242, 235);}
+#chm{background-image: url('che.jpg'); background-color: rgb(255, 229, 229);}
+#math{background-image: url('math.jpg'); background-color: rgb(231, 240, 249);}
+#egn{background-image: url('egn.jpg'); background-color: rgb(225, 220, 252);}
 .subject-title{
     color: black;
     font-size: 48px;
@@ -123,6 +123,7 @@ footer ul{list-style: none; padding: 0; float: left; margin-right: 50px;}
 footer ul li{margin-bottom: 10px;}
 @media only screen and (max-width: 768px){
     #main h1{font-size: 36px;}
+    #main h1 svg{width: 220px;}
     #main h1 svg text{
         transform: translate(0px,83px);
         -ms-transform: translate(0px,83px); /* IE 9 */
