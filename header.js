@@ -43,6 +43,9 @@ let header="<header>\
                         <a class='dropdown-item' href='https://www.youtube.com/channel/UCNMCqiRPasl9T1VudKd7KMQ/featured' target='_blank'>線上成發精彩重播</a>\
                     </div>\
                 </li>\
+                <li class='nav-item active'>\
+                    <a class='nav-link' href='photo.html'>活動照片</a>\
+                </li>\
             </ul>\
         </div>\
     </nav>\
