@@ -1,3 +1,33 @@
+for(var i=1; i<29; ++i)if(document.querySelector('.not-found'+String(i)))document.querySelector('.not-found'+String(i)).innerHTML="<section id='pdf'><iframe src='pdf-"+String(i)+".pdf'></iframe></section>";
+for(var i=1; i<29; ++i)if(document.querySelector('.not-foundf'+String(i)))document.querySelector('.not-foundf'+String(i)).innerHTML="<section id='pdf'><iframe src='pdf-"+String(i)+"-full.pdf'></iframe></section>"
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
 var a="<h1 align='center'><big>報告還在虛幻之中<br>敬請期待</big></h1><br>";
 var b="<div class='header'></div>\
 <script src='header.js'></script>\
@@ -165,10 +195,18 @@ function real(){
     document.querySelector('.not-found').innerHTML=a;
     setTimeout("index()", 2000);
 }
+function Real(){
+    ask2();
+    setTimeout("real()", 500);
+}
 function hallucination(){
     a="<h1 align='center'><big>報告還在虛幻之中<br>敬請期待</big><br><br>這是夢嗎？為什麼那麼真實...</h1><br>";
     document.querySelector('.not-found').innerHTML=a;
     setTimeout("xedni()", 2000);
+}
+function Hallucination(){
+    ask2();
+    setTimeout("hallucination()", 500);
 }
 function init(){
     ++time;
@@ -180,14 +218,20 @@ function init(){
     else setTimeout("ask()", 2000);
     document.querySelector('.not-found').innerHTML=a;
 }
+function tini(){
+    document.querySelector('.not-found').innerHTML="<h1 align='center'><big>報告還在虛幻之中<br>敬請期待</big></h1><br><h1 align='center'>難到~這就是解脫...</h1>";
+    setTimeout("javascript:location.href='https://www.youtube.com/watch?v=O1s8OEzlBN0'", 2000);
+}
 function ask(){
-    a+="<div align='center'><span>您想待在虛幻之中，抑或回到現實呢？<br></span>\
-    <button onclick='hallucination()'>待在虛幻</button>　　<button onclick='real()'>回到現實</button></div>";
+    if(time<3)a+="<div align='center'><span>您想待在虛幻之中，抑或回到現實呢？<br></span><button onclick='hallucination()'>待在虛幻</button>　　<button onclick='real()'>回到現實</button></div>";
+    if(time==3)a+="<div align='center'><span>您想待在虛幻之中，抑或回到現實呢？<br></span><button onclick='Hallucination()'>待在虛幻</button>　　<button onclick='Real()'>回到現實</button></div>";
     document.querySelector('.not-found').innerHTML=a;
-    if(time==3)setTimeout("ask2()", 2000);
+    if(time==3)setTimeout("ask2()", 3000);
 }
 function ask2(){
-    a+="<br><div align='center'><span>真的沒有別的<button onclick='hallucination()'>選擇</button>了嗎？</span></div>"
+    if(time>3)return;
+    ++time;
+    a+="<br><div align='center'><span>真的沒有別的<button onclick='tini()'>選擇</button>了嗎？</span></div>";
     document.querySelector('.not-found').innerHTML=a;
 }
 init();

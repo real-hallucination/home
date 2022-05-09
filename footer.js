@@ -2,9 +2,10 @@ footer="<footer>\
 <div class='container'>\
     <div class='row'>\
         <div class='col-md-4 text-left'>\
-            <h4>聯絡我們</h4>\
+            <h4>關注我們</h4>\
             <ul>\
             <li>Instagram: <a href='https://www.instagram.com/hallucination.tcfshcos10/' target='_blank'>@tcfshcos10</a></li>\
+            <li>Youtube頻道: <a href='https://www.youtube.com/channel/UCNMCqiRPasl9T1VudKd7KMQ' target='_blank'>實 | Hallucination</a>\
             <li>E-mail: <a href='mailto:hallucinationcos1022@gmail.com' target='_blank'>hallucinationcos1022@gmail.com</a></li>\
         </div>\
         <div class='col-md-4 text-left'>\

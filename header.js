@@ -37,10 +37,12 @@ let header="<header>\
                         影音相關\
                     </a>\
                     <div class='dropdown-menu' aria-labelledby='navbarDropdown'>\
-                        <a class='dropdown-item' href='https://www.youtube.com/watch?v=CYHws4geDNA' target='_blank'>預告片-恐怖巨獻</a>\
-                        <a class='dropdown-item' href='https://www.youtube.com/watch?v=O1s8OEzlBN0' target='_blank'>預告片-患蛋見真情</a>\
-                        <a class='dropdown-item' href='#'>患蛋</a>\
-                        <a class='dropdown-item' href='https://www.youtube.com/channel/UCNMCqiRPasl9T1VudKd7KMQ/featured' target='_blank'>線上成發精彩重播</a>\
+                        <a class='dropdown-item' href='https://www.youtube.com/watch?v=CYHws4geDNA' target='_blank'>《患蛋》預告片-恐怖巨獻</a>\
+                        <a class='dropdown-item' href='https://www.youtube.com/watch?v=O1s8OEzlBN0' target='_blank'>《患蛋》預告片-患蛋見真情</a>\
+                        <a class='dropdown-item' href='https://www.youtube.com/watch?v=GASzQYdRsCk' target='_blank'>《患蛋》</a>\
+                        <a class='dropdown-item' href='https://www.youtube.com/watch?v=xKsyWZ5SayY' target='_blank'>《患蛋》片尾曲</a>\
+                        <a class='dropdown-item' href='https://www.youtube.com/watch?v=huiD8AzljGA' target='_blank'>《實|Hallucination》成發曲</a>\
+                        <a class='dropdown-item' href='https://www.youtube.com/watch?v=WO_HmDq6Low' target='_blank'>線上成發精彩重播</a>\
                     </div>\
                 </li>\
                 <li class='nav-item active'>\
